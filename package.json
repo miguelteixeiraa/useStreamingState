@@ -1,12 +1,12 @@
 {
     "name": "use-streaming-state",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "Hook to read data from a streaming API",
     "main": "index.js",
     "scripts": {
-        "install": "tsc",
-        "prepare": "tsc",
-        "build": "tsc",
+        "install": "npx -p typescript tsc",
+        "prepare": "npx -p typescript tsc",
+        "build": "npx -p typescript tsc",
         "test": "jest"
     },
     "repository": {

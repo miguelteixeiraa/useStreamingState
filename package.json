@@ -4,6 +4,8 @@
     "description": "Hook to read data from a streaming API",
     "main": "index.js",
     "scripts": {
+        "install": "tsc",
+        "prepare": "tsc",
         "build": "tsc",
         "test": "jest"
     },

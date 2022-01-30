@@ -2,7 +2,7 @@ import { parseResponse } from './utils/parseResponse'
 
 export interface StreamingProps {
     reqInfo: RequestInfo
-    reqInit: RequestInit
+    reqInit?: RequestInit
     dataSeparator?: string
     streamBuffer?: boolean
 }
@@ -88,3 +88,17 @@ export const useStreamingState = (
             })
         })
 }
+
+useStreamingState(
+    {
+        reqInfo: 'http://localhost:8080',
+        reqInit: {
+            method: 'POST'
+        },
+        streamBuffer: true,
+        dataSeparator: '\\n'
+    },
+    (state) => {
+        console.log('incoming data from streaming', state)
+    }
+)

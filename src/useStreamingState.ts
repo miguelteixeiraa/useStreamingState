@@ -1,7 +1,8 @@
 import { parseResponse } from './utils/parseResponse'
 
 export interface StreamingProps {
-    req: RequestInfo
+    reqInfo: RequestInfo
+    reqInit: RequestInit
     dataSeparator?: string
     streamBuffer?: boolean
 }
@@ -17,13 +18,13 @@ export const useStreamingState = (
     options: StreamingProps,
     stream: StreamingOutput
 ): void => {
-    if (!options || !options.req) {
+    if (!options || !options.reqInfo) {
         throw new Error('should specify the request info')
     }
 
     let buffer: string[] = []
 
-    fetch(options.req)
+    fetch(options.reqInfo, options.reqInit ?? {})
         .then((response) => response.body)
         .then((rb) => {
             if (!rb) {
@@ -58,7 +59,10 @@ export const useStreamingState = (
                                 return
                             }
 
-                            let incomingData = parseResponse(value, options.dataSeparator)
+                            let incomingData = parseResponse(
+                                value,
+                                options.dataSeparator
+                            )
 
                             if (incomingData) {
                                 if (options.streamBuffer) {

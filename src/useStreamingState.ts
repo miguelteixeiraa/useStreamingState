@@ -59,7 +59,7 @@ export const useStreamingState = (
                                 return
                             }
 
-                            let incomingData = parseResponse(
+                            const incomingData = parseResponse(
                                 value,
                                 options.dataSeparator
                             )

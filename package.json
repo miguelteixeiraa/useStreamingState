@@ -1,11 +1,12 @@
 {
+    "name": "use-streaming-state",
     "version": "1.0.0",
     "description": "Hook to read data from a streaming API",
     "main": "index.ts",
     "repository": {
         "type": "git",
         "url": "git@github.com:miguelteixeiraa/useStreamingState.git"
-      },
+    },
     "devDependencies": {
         "@jest/types": "^27.4.2",
         "@types/jest": "^27.4.0",
@@ -30,7 +31,7 @@
         "streamingapi"
     ],
     "contributors": [
-      "Miguel Teixeira (https://github.com/miguelteixeiraa)"
+        "Miguel Teixeira (https://github.com/miguelteixeiraa)"
     ],
     "author": "Miguel Teixeira (https://twitter.com/stxramiguel)",
     "license": "MIT"

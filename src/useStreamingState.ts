@@ -88,17 +88,3 @@ export const useStreamingState = (
             })
         })
 }
-
-useStreamingState(
-    {
-        reqInfo: 'http://localhost:8080',
-        reqInit: {
-            method: 'POST'
-        },
-        streamBuffer: true,
-        dataSeparator: '\\n'
-    },
-    (state) => {
-        console.log('incoming data from streaming', state)
-    }
-)

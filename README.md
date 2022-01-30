@@ -11,7 +11,8 @@ useStreamingState(
     {
         reqInfo: 'http://localhost:8080',
         reqInit: {
-            method: 'POST'
+            method: 'POST',
+            body: new FormData()
         },
         streamBuffer: true,
         dataSeparator: '\\n'

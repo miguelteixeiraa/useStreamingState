@@ -1,6 +1,6 @@
 export const parseResponse = (
     byteArr: Uint8Array | BufferSource | null | undefined,
-    separator: string | null | undefined = undefined
+    separator?: string | null
 ): string[] => {
     if (!byteArr) {
         return []

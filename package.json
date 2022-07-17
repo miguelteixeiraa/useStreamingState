@@ -1,45 +1,45 @@
 {
-    "name": "use-streaming-state",
-    "version": "1.5.0",
-    "description": "Hook to read data from a streaming API",
-    "main": "index.js",
-    "scripts": {
-        "install": "npx -p typescript tsc",
-        "prepare": "npx -p typescript tsc",
-        "build": "npx -p typescript tsc",
-        "test": "jest"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:miguelteixeiraa/useStreamingState.git"
-    },
-    "devDependencies": {
-        "@jest/types": "^27.4.2",
-        "@types/jest": "^27.4.0",
-        "@typescript-eslint/eslint-plugin": "^4.0.1",
-        "eslint": "^7.12.1",
-        "eslint-plugin-import": "^2.22.1",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^5.0.0",
-        "jest": "^27.4.7",
-        "ts-jest": "^27.1.3",
-        "ts-loader": "^9.2.6",
-        "ts-node": "^10.4.0",
-        "typescript": "^4.5.5"
-    },
-    "keywords": [
-        "streamingoutput",
-        "streaming",
-        "javascript",
-        "typescript",
-        "hook",
-        "react",
-        "vue",
-        "streamingapi"
-    ],
-    "contributors": [
-        "Miguel Teixeira (https://github.com/miguelteixeiraa)"
-    ],
-    "author": "Miguel Teixeira (https://twitter.com/stxramiguel)",
-    "license": "MIT"
+  "name": "use-streaming-state",
+  "version": "1.5.0",
+  "description": "Hook to read data from a streaming API",
+  "main": "index.js",
+  "scripts": {
+    "install": "npx -p typescript tsc",
+    "prepare": "npx -p typescript tsc",
+    "build": "npx -p typescript tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:miguelteixeiraa/useStreamingState.git"
+  },
+  "devDependencies": {
+    "@jest/types": "^27.4.2",
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "eslint": "^7.12.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.0.0",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.3",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "keywords": [
+    "streamingoutput",
+    "streaming",
+    "javascript",
+    "typescript",
+    "hook",
+    "react",
+    "vue",
+    "streamingapi"
+  ],
+  "contributors": [
+    "Miguel Teixeira (https://github.com/miguelteixeiraa)"
+  ],
+  "author": "Miguel Teixeira (https://twitter.com/stxramiguel)",
+  "license": "MIT"
 }

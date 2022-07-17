@@ -1,25 +1,26 @@
 export const parseResponse = (
-    byteArr: Uint8Array | BufferSource | null | undefined,
-    separator?: string | null
+  byteArr: Uint8Array | BufferSource | null | undefined,
+  separator?: string | null
 ): string[] => {
-    if (!byteArr) {
-        return []
-    }
+  if (!byteArr) {
+    return [];
+  }
 
-    const utf8decoder = new TextDecoder()
-    let rawResponse: string
-    try {
-        rawResponse = utf8decoder.decode(byteArr)
-    } catch (e) {
-        throw new Error(`unable to decode byte array ${e}`)
-    }
+  const utf8decoder = new TextDecoder();
+  let rawResponse: string;
+  try {
+    rawResponse = utf8decoder.decode(byteArr);
+  } catch (e) {
+    throw new Error(`unable to decode byte array ${e}`);
+  }
 
-    if (rawResponse && separator) {
-        return rawResponse
-            .split(separator)
-            .map((value) => value.trim())
-            .filter((value) => value != '')
-    }
+  if (rawResponse && separator) {
+    return rawResponse.split(separator).reduce((res, curr) => {
+      res.push(curr.trim());
 
-    return rawResponse ? [rawResponse] : []
-}
+      return res;
+    }, [] as string[]);
+  }
+
+  return rawResponse ? [rawResponse] : [];
+};
